@@ -7,7 +7,8 @@ app.get('/',(req,res)=>{
 app.listen(3000,()=>{
   console.log("localhost:300 is runing")
 })
-const token = '5799631195:AAHs42HTP22Q83qq5Yd98fEWpmJffnTv9Mk'; // Replace with your own bot token
+//const token = '5799631195:AAHs42HTP22Q83qq5Yd98fEWpmJffnTv9Mk'; // Replace with your own bot token
+const token =process.env.BOT
 const bot = new TelegramBot(token, { polling: true });
 const webappurl="https://fanoshomecaretreatment.com/";
 const elian="https://elianaturings.000webhostapp.com/";
